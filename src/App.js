@@ -13,6 +13,7 @@ class App extends React.Component{
     async componentDidMount(){
         const fetchedData = await fetchData()
         this.setState({data:fetchedData})
+        console.log("Fetched Data from API in index.js componentDidMount")
         console.log(fetchedData)
     }
 
